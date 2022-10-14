@@ -1,3 +1,31 @@
+## 5.2.1
+#### Android
+- Removed build constant TIRAMISU to fix build error if targeting API 32 or less ([#1140](https://github.com/miguelpruivo/flutter_file_picker/issues/1140), [#1124](https://github.com/miguelpruivo/flutter_file_picker/issues/1124))
+
+## 5.2.0+1
+- Reverts 5.2.0 due to multiple regressions.
+
+
+## 5.2.0
+
+#### Android
+- Fixes issue with caching on android
+- Files will be retrieved without caching to avoid delay (Only cached if paths cannot be retrieved directly )
+## 5.1.0
+#### Desktop (Windows)
+- Update Dependencies to latest versions (Win32 2.7.0 to 3.0.0). (Thank you @ishangavidusha)
+- Set default dialog title to empty. (Thank you @whuhewei)
+
+#### iOS
+Fixes an issue when picking live photos. (Thank you @nagibazad)
+
+#### Android
+Removes READ_EXTERNAL_STORAGE on SDKs targeting 33 or above. (Thank you @alexmercerind)
+
+## 5.0.1
+#### Android
+Replaces random number generation with milliseconds timestamp in file name fallback.
+
 ## 5.0.0
 
 #### General
